@@ -29,7 +29,8 @@ const Navbar = () => {
 
   useEffect(() => {  
     getData(url);
-  }, [search]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [url]);
 
   const handleSubmit = (event) => {
     event.preventDefault();

@@ -53,6 +53,7 @@ const ProductDetail = () => {
 
   useEffect(() => {  
     getDataDetails(url)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
 
   const additives_tags_data = (!dataDetails.additives_tags ? '' : dataDetails.additives_tags);
