@@ -7,10 +7,6 @@ import ProductDetail from "./components/ProductDetail";
 
 import Container from '@mui/material/Container';
 
-import { ThemeProvider, createTheme } from '@mui/material';
-import { red } from '@mui/material/colors';
-
-
 const App = () => {
 
     return (
@@ -23,7 +19,6 @@ const App = () => {
                 flexDirection: 'row',
                 justifyContent: 'center',
               }}>
-                {/* <MainPage /> */}
                 <Routes>
                   <Route path='/' element={ <MainPage /> } />
                   <Route path='/productDetail' element={ <ProductDetail /> } />
